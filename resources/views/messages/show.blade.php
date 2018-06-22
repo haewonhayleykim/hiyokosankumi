@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h1>id = {{ $message->id }} のメッセージ詳細ページ</h1>
+    <h1>id = {{ $message->id }} の詳細ページ</h1>
 
     <table class="table table-bordered">
         <tr>
@@ -14,12 +14,12 @@
             <td>{{ $message->title }}</td>
         </tr>
         <tr>
-            <th>メッセージ</th>
+            <th>ご意見</th>
             <td>{{ $message->content }}</td>
         </tr>
     </table>
 
-    {!! link_to_route('messages.edit', 'このメッセージを編集', ['id' => $message->id], ['class' => 'btn btn-default']) !!}
+    {!! link_to_route('messages.edit', 'このご意見を編集', ['id' => $message->id], ['class' => 'btn btn-default']) !!}
 
     {!! Form::model($message, ['route' => ['messages.destroy', $message->id], 'method' => 'delete']) !!}
         {!! Form::submit('削除', ['class' => 'btn btn-danger']) !!}

@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h1>メッセージ新規作成ページ</h1>
+    <h1>投稿ページ</h1>
 
 
     <div class="row">
@@ -15,7 +15,7 @@
                 </div>
                     
                 <div class="form-group">
-                    {!! Form::label('content', 'メッセージ:') !!}
+                    {!! Form::label('content', 'ご意見:') !!}
                     {!! Form::text('content', null, ['class' => 'form-control']) !!}
                 </div>
                 

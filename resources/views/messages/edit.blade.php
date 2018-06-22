@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h1>id: {{ $message->id }} のメッセージ編集ページ</h1>
+    <h1>id: {{ $message->id }} の編集ページ</h1>
 
     <div class="row">
         <div class="col-xs-6">
@@ -13,7 +13,7 @@
                 </div>
         
                 <div class="form-group">
-                    {!! Form::label('content', 'メッセージ:') !!}
+                    {!! Form::label('content', 'ご意見:') !!}
                     {!! Form::text('content', null, ['class' => 'form-control']) !!}
                 </div>
         

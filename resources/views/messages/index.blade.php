@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h1>メッセージ一覧</h1>
+    <h1>ご意見一覧</h1>
 
     @if (count($messages) > 0)
         <table class="table table-striped">
@@ -10,7 +10,7 @@
                 <tr>
                     <th>id</th>
                     <th>タイトル</th>
-                    <th>メッセージ</th>
+                    <th>ご意見</th>
                 </tr>
             </thead>
             <tbody>
@@ -24,5 +24,5 @@
             </tbody>
         </table>
     @endif
-    {!! link_to_route('messages.create', '新規メッセージの投稿', null, ['class' => 'btn btn-primary']) !!}
+    {!! link_to_route('messages.create', '投稿', null, ['class' => 'btn btn-primary']) !!}
 @endsection
